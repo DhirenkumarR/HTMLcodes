@@ -29,6 +29,7 @@ table, th, td {
   border-collapse: collapse;
   padding: 10px;
   font-align: center;
+  background-color: #ffccff;
 }
 tr{
 	background: #b2db35;
@@ -37,15 +38,62 @@ tr{
 }
 h3{
 	fontcolor : blue;
+}table {
+  width: 100%;
 }
-.content {padding:20px;}
+caption {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px;
+  color: rgba(3, 83, 50, 0.8);
+  background-color: #ff6600;
+}
+table tr th {
+  font-size: 25px;
+  padding: 10px;
+}
+table tr td{
+  font-size: 22px;
+  text-align: center;
+}
+table tr {
+  background-color:  rgba(17, 223, 137, 0.329);
+}
+table tr td:hover {
+  background-color:  rgba(16, 177, 110, 0.329);
+}
+table tr td:nth-child(1):hover{
+    background-color:  rgba(3, 83, 50, 0.8);
+}
+table tr td a{
+    text-decoration: none;
+    color: blueviolet;
+}
+table tr td a:active {
+    color: red;
+}
+table tr td a:visited{
+    color: black;
+}
+table tr td a:hover {
+    color: white;
+}
+table tr th {
+  background-color: rgba(3, 83, 50, 0.8);
+  color: white;
+}
+p {
+    text-align: center;
+    font-size: 25px;
+}
 </style>
 </head>
 <body>
 <div class="header"><h1 align="center">Web Programming Excercise</h1></div>
-<div class="content">
-<p><b><ul><li><h2>belove the table is describe list of Excercise:</h2></li></ul></b></p>
+<br>
 <table align = "center">
+  <caption> belove the table is describe list of Excercise: || Table Hover Effect</caption>
+  <br>
   <tr>
     <th>Ex No</th>
     <th>Ex Name</th>
@@ -85,11 +133,29 @@ h3{
   <tr>
     <td>6</td>
     <td>Registration Form</td>
-    <td>Registration Form Practical 1 (2)</td>
+    <td>Registration Form </td>
     <td><a href="6.html">Excercise 6</a></td>
   </tr>
+  <tr>
+    <td>7</td>
+    <td>News Site</td>
+    <td>Designing Webpage For News Site Using Positioning,margin,padding</td>
+    <td><a href="7.html">Excercise 7</a></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Pseudo Classes</td>
+    <td>Describing The Concept Of Pseudo class</td>
+    <td><a href="8.html">Excercise 8</a></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Hover Efffect</td>
+    <td>Table Cellss Hover Effect And Links Active Hover Effect</td>
+    <td><a href="#">Excercise 9</a></td>
+  </tr>
 </table>
-</div>
+<br>
 <footer>
 <h3 style="color:blue">Dhirenkumar Rathod - 180020107057</h3>
 </footer>
