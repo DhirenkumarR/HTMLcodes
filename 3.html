@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Three</title>
+<link rel="icon" href="dp.jpeg" type="image/gif" sizes="16x16">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  background-image: url('back.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  font-family: Arial;
+  margin: 0;
+}
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #0c206e;
+  color: white;
+  font-size: 15px;
+}
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #cff20a;
+  color: white;
+}
+/* Page Content */
+.content {
+	padding:20px;
+	text-align: center;
+	font-size: 15px;
+	}
+.content2{
+	padding: 10px;
+	background: #eb4034;
+}
+</style>
+</head>
+<body>
+<div class="header"><b><center><h1>4.Bulb Using JavaScript</h1></center></b></div>
+<div class="content2">
+<h2 align="center"> What Can JavaScript Do? </h2>
+<ul>
+<li><h3> JavaScript can Change HTML attribute values. </h3></li>
+<li><h3> In this Case javascript changes the value of the src(source) attribute of an image. </h3></li>
+</ul>
+</div>
+<div class="content">
+<b><center><h2>1.Bulb Using JavaScript Differnt Colours</h2></center></b>
+<img id="myImage" src="whitebulb.jfif" style="width:100px">	
+<br>
+<button onclick="document.getElementById('myImage').src='redbulb.jpg'"> Red Bulb </button>
+<button onclick="document.getElementById('myImage').src='bluebulb.jpg'"> blue bulb </button>
+<button onclick="document.getElementById('myImage').src='yellobulb.jpg'"> yello bulb </button>
+<button onclick="document.getElementById('myImage').src='whitebulb.jfif'"> white bulb </button>
+</div>
+<div class="content">
+<b><center><h2>2.Bulb Using JavaScript ON/OFF</h2></center></b>
+<img id="image" src="pic_bulboff.gif" style="width:100px">
+<br>
+<button onclick="document.getElementById('image').src='pic_bulbon.gif'"> Turn on the Light </button>
+<button onclick="document.getElementById('image').src='pic_bulboff.gif'"> Turn off the Light </button>
+<br>
+<br>
+<footer>
+<h3 style="color:blue">Dhirenkumar Rathod - 180020107057</h3>
+<h3 style="color:blue"><a href="index.html">go to home page</a></h3>
+</footer>
+</div>
+</body>
+</html>
