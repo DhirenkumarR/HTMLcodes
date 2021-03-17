@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #cff20a;
+  color: white;
+}
+body {
+    
+}
+h1 {
+    text-align: center;
+    margin: 25px;
+    padding: 20px;
+    text-align: center;
+    background: #0c206e;
+    color: white;
+
+}
+hr {
+    width: 30%;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: black;
+    padding: 2px;
+}
+/* table1 */
+.center-table {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 50px;
+}
+.table1 table {
+    width: 50%;
+    height: 250px;
+}
+.table1 table,.table1 tr th, .table1 tr td {
+    border: 3px solid green;
+    border-collapse: collapse;
+}
+.table1 table tr td {
+    padding-left: 20px;
+}
+/* table2 */
+.table2 table {
+    border: 2px solid black;
+    width: 40%;
+    height: 200px;
+    text-align: left;
+}
+.table2 table tr td {
+    border: 2px solid black;
+    padding-left: 20px;
+}
+/* table3 */
+.table3 div {
+    border: 5px solid black;
+    width: 30%;
+}
+.table3 table {
+    width: 100%;
+    margin: 1px;
+}
+.table3 table, .table3 tr td {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+.table3 table tr td {
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+.table3 table tr:nth-child(1) td{
+    text-align: left;
+}
+.table3 table tr td:nth-child(1){
+    text-align: left;
+}
+/* table4 */
+.table4 table {
+    border: 3px solid rgb(158, 158, 158);
+    width: 40%;
+}
+.table4 table tr td {
+    border: 3px solid rgb(177, 173, 173);
+    padding: 10px;
+}
+/* table5 */
+.table5 table{
+    border: 10px solid black;
+    width: 30%;
+    padding: 10px;
+}
+.table5 table tr td, .table5 table tr th {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+}
+/* table6 */
+.table6 table {
+    border: 2px solid black;
+    width: 20%;
+}
+.table6 table tr td, .table6 table tr th {
+    border: 2px solid black;
+}
+/* table7 */
+.table7 table tr td {
+    border: 3px solid black;
+}
+/* table8 */
+.table8 table tr td {
+    border: 2px solid black;
+    padding: 5px;
+}
+/* table9 */
+.table9 table {
+    border: 2px solid rgb(177, 173, 173);
+    width: 20%;
+}
+.table9 table tr td, .table6 table tr th {
+    border: 2px solid rgb(177, 173, 173);
+}
+  padding: 20px;
+  text-align: center;
+  background: #0c206e;
+  color: white;
+  font-size: 15px;
+
