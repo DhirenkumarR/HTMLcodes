@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../dp.jpeg" type="image/gif" sizes="16x16">
+    <title>INCRESING FONT SIZE</title>
+    <style>
+        body {
+            background-color:rgb(238, 240, 237);
+        }
+        p {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        .header {
+  padding: 20px;
+  text-align: center;
+  background: #0c206e;
+  color: white;
+  font-size: 15px;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #cff20a;
+  color: white;
+  margin-top: 100px;
+}
+    </style>
+</head>
+<body>
+    <div class="header"><h1 align="center">INCRESING FONT SIZE 50PX INTERVAL 50MS USING JS</h1></div>
+    <p id="demo"></p>
+    <script>
+        var var1 = setInterval(inTimer, 1000);
+        var fs = 3;
+        var ids = document.getElementById("demo");
+        function inTimer() {
+            ids.innerHTML = '<b> AHMEDABAD INSTITUTE OF TECHNOLOGY </b>';
+            ids.setAttribute('style', "font-size: " + fs + "px; color: BLUE;");
+            fs += 3;
+            if(fs >= 50 ){
+            clearInterval(var1);
+            }
+        }
+    </script>
+
+    <footer>
+        <h3 style="color:blue">Dhirenkumar Rathod - 180020107057</h3>
+        <h3 style="color:blue"><a href="../index.html">go to home page</a></h3>
+        </footer>
+</body>
+</html>

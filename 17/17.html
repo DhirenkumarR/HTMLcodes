@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../dp.jpeg" type="image/gif" sizes="16x16">
+    <title>Login Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header"><h1 align="center">Login Form Validation Using JS</h1></div>
+    <form class="container" method="GET"  onsubmit="alert('Succesfully Submited.!!')">
+       
+        
+        
+        <label for="uname"><b>User Name</b></label><br>
+        <input type="text" name="uname" id="uname" placeholder="Enter Your User Name" pattern="[a-zA-Z0-9@_!#$%^&*]+" required>
+        <br>
+
+        <div id="validate_uname">
+            <p id="starting" class="valid_uname">Should not strat with _ or @ or numbers*</p>
+        </div>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" name="pwd" id="pwd" placeholder="Enter Your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required>
+        <br>
+
+        <div id="validate">
+            <p id="lower" class="invalid">Contain a lowercase letters*</p>
+            <p id="capital" class="invalid">Contain a uppercase letters*</p>
+            <p id="num" class="invalid">Contain a numbers*</p>
+            <p id="length" class="invalid">Contain a minimum 6 characters*</p>
+        </div>
+
+        <input type="submit" value="Submit" id="submit"> 
+        <div class="login">
+            <p>Don't have an account pls register? <a href="../16/16.html">Register</a>.</p>
+        </div>
+
+    </form>
+   
+
+    <footer>
+        <h3 style="color:blue">Dhirenkumar Rathod - 180020107057</h3>
+        <h3 style="color:blue"><a href="../index.html">go to home page</a></h3>
+        </footer>
+
+    <script src="17.js"></script>
+
+</body>
+</html>
