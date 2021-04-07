@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Embedding Youtube Videos</title>
+	<link rel="icon" href="../dp.jpeg" type="image/gif" sizes="16x16">
+	<style>
+		body {
+			background-color: brown;
+			;
+			font-family: Arial;
+			margin: 0;
+		}
+
+		.header {
+			padding: 20px;
+			text-align: center;
+			background: #0c206e;
+			color: white;
+			font-size: 15px;
+		}
+
+		h2 {
+			color: rgba(169, 240, 3, 0.994);
+			text-align: center;
+			margin: 25px;
+		}
+
+		p {
+			color: rgba(169, 240, 3, 0.994);
+			text-align: center;
+			margin: 25px;
+			text: size 25px;
+			;
+		}
+
+		button:hover {
+			color: darkgreen;
+			border: darkorange;
+
+		}
+
+		footer {
+			text-align: center;
+			padding: 3px;
+			background-color: #cff20a;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h1 align="center"> Examples of HTML MultiMedia </h1>
+	</div>
+	<h2> 1. YouTube Video Embedding </h2>
+	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/8cm1x4bC610?start=13250"
+			title="YouTube video player" frameborder="5"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe></center>
+
+	<h2>2. internal video Embedding</h2>
+	<center><video id="video1" width="560" controls>
+			<source src="dhiren.mp4" type="video/mp4">
+			<source src="dhiren.ogg" type="video/ogg">
+			Your browser does not support HTML video.
+		</video>
+	</center>
+
+	<h2>3. internal audio Embedding</h2>
+	<center>
+		<audio controls>
+
+			<source src="dhiren.m4a" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+	</center>
+
+
+	<h2>4. HTML GeoLocation</h2>
+	<p>Click the button to get your coordinates.</p>
+
+	<center><button onclick="getLocation()">Try It</button></center>
+
+	<p id="demo"></p>
+
+	<script>
+		var x = document.getElementById("demo");
+
+		function getLocation() {
+			if (navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(showPosition);
+			} else {
+				x.innerHTML = "Geolocation is not supported by this browser.";
+			}
+		}
+
+		function showPosition(position) {
+			x.innerHTML = "Latitude: " + position.coords.latitude +
+				"<br>Longitude: " + position.coords.longitude;
+		}
+	</script>
+	<footer>
+		<h3 style="color:blue">Dhirenkumar Rathod - 180020107057</h3>
+		<h3 style="color:blue"><a href="../index.html">go to home page</a></h3>
+	</footer>
+
+</body>
+
+</html>
