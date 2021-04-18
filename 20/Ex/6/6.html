@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>JavaScript Conditions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="../../../dp.jpeg" type="image/gif" sizes="16x16">
+    </head>
+    <body>
+        <header class="main">
+            <h1>JavaScript Conditions</h1>
+        </header>
+        <div id="container">
+            <p><b>Find Largest Number : </b></p><br>
+            <input type="number" id="no1" placeholder="Enter First Number " style="width: 250px; height: 25px;">
+            <input type="number" id="no2" placeholder="Enter Second Number " style="width: 250px; height: 25px;">
+            <input type="number" id="no3" placeholder="Enter third Number " style="width: 250px; height: 25px;"><br><br>
+            <button type="submit" id="btn" onclick="max()">Submit</button> 
+            <br><br>
+            <p id="con_demo"></p>
+
+            <script>
+                function max() {
+                    let n1 = parseFloat(document.getElementById("no1").value);
+                    let n2 = parseFloat(document.getElementById("no2").value);
+                    let n3 = parseFloat(document.getElementById("no3").value);
+                    let max;
+                    if (n1 >= n2 && n1 >= n3) {
+                        max = n1;
+                    } else if (n2 >= n1 && n2 >= n3) {
+                        max = n2;
+                    } else {
+                        max = n3;
+                    }
+                    document.getElementById("con_demo").innerHTML = "Largest Number is : " + max;
+                }
+
+            </script>
+        </div>
+        <footer class="main">
+            <h2>180020107057 - Dhirenkumar Rathod</h2>
+            <a href="../../../index.html">back to home</a>
+            <a href="../../20.html">back</a>
+        </footer>
+    </body>
+</html>

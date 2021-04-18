@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>JavaScript Events</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="../../../dp.jpeg" type="image/gif" sizes="16x16">
+    </head>
+    <body>
+        <header class="main">
+            <h1>JavaScript Events</h1>
+        </header>
+       <div id="container">
+                    <p><b>Display Date and Time using onclick event :</b></p><br>
+                    <button type="submit" id="btn" onclick="displayDate()">Click Here</button> 
+                    <br><br>
+                    <p id="event_demo"></p>
+
+                    <script>
+                        function displayDate() {
+                            document.getElementById("event_demo").innerHTML = Date();
+                        }
+                        
+                    </script>
+                </div>
+        <footer class="main">
+            <h2>180020107057 - Dhirenkumar Rathod</h2>
+            <a href="../../../index.html">back to home</a>
+            <a href="../../20.html">back</a>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>JavaScript Objects</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="../../../dp.jpeg" type="image/gif" sizes="16x16">
+    </head>
+    <body>
+        <header class="main">
+            <h1>JavaScript Objects</h1>
+        </header>
+        <div id="container">
+            <p id="obj_demo"></p>
+
+            <script>
+                {
+                    var employee = {
+                        firstName: "Krishna",
+                        lastName: "Yadav",
+                        Gender: "Male",
+                        age: 25,
+                        salary: 20000,
+                        fullName: function () {
+                            return this.firstName + " " + this.lastName;
+                        }
+                    };
+                    document.getElementById("obj_demo").innerHTML =
+                            "<b>JS Objects have properties and methods. <br> Here Employee is object and it's properties is given below : </b>" + "<br>" +
+                            "First Name : " + employee.firstName + "<br>" +
+                            "last Name : " + employee.lastName + "<br>" +
+                            "Age : " + employee.age + "<br>" +
+                            "Gender : " + employee.gender + "<br>" +
+                            "Salary : " + employee.salary + "<br>" +
+                            "<b>And method is given below : </b><br>" +
+                            "Full Name : " + employee.fullName() + "<br>";
+
+                }
+            </script>
+        </div>
+        <footer class="main">
+            <h2>180020107057 - Dhirenkumar Rathod</h2>
+            <a href="../../../index.html">back to home</a>
+            <a href="../../20.html">back</a>
+        </footer>
+    </body>
+</html>

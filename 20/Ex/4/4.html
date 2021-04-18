@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>JavaScript Function</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="../../../dp.jpeg" type="image/gif" sizes="16x16">
+    </head>
+    <body>
+        <header class="main">
+            <h1>JavaScript Function</h1>
+        </header>
+        <div id="container">
+            <p><b>Fahrenheit to Celsius Converter using function :</b></p><br>
+            <input type="number" id="numf" placeholder="Enter temperature in Fahrenheit " style="width: 250px; height: 25px;"><br><br>
+            <button type="submit" id="btn" onclick="FtoC()">Submit</button> 
+            <br><br>
+            <p id="fun_demo"></p>
+
+            <script>
+                function FtoC() {
+                    var f = document.getElementById("numf").value;
+                    document.getElementById("fun_demo").innerHTML =
+                            "The temperature in Celsius is : " + (5 / 9) * (f - 32) + "C";
+                    ;
+                }
+
+            </script>
+        </div>
+        <footer class="main">
+            <h2>180020107057 - Dhirenkumar Rathod</h2>
+            <a href="../../../index.html">back to home</a>
+            <a href="../../20.html">back</a>
+        </footer>
+    </body>
+</html>

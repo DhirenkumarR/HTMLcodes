@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>JavaScript Loops</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="../../../dp.jpeg" type="image/gif" sizes="16x16">
+    </head>
+    <body>
+        <header class="main">
+            <h1>JavaScript Loops</h1>
+        </header>
+        <div class="container">
+            <p><b>Pyramid Maker Using For loop:  </b></p><br>
+            <input type="number" id="pnum" placeholder="Enter Total Number of Rows " style="width: 250px; height: 25px;"><br><br>
+            <button type="submit" id="btn" onclick="pera()">Submit</button> 
+            <br><br>
+            <p id="loop_demo"></p>
+
+            <script>
+                function pera() {
+                    let totalNumberofRows = parseFloat(document.getElementById("pnum").value);
+                    let temp = "";
+                    for (var i = 1; i <= totalNumberofRows; i++) {
+                        for (var j = 1; j <= i; j++)
+                        {
+                            temp += j;
+                        }
+                        temp += "<br>";
+                    }
+                    document.getElementById("loop_demo").innerHTML = temp;
+
+                }
+
+            </script>
+        </div>
+        <div class="container">
+            <p><b>Find Fectorial Number using While Loop :  </b></p><br>
+            <input type="number" id="fnum" placeholder="Enter the Number " style="width: 250px; height: 25px;"><br><br>
+            <button type="submit" id="btn" onclick="fecto()">Submit</button> 
+            <br><br>
+            <p id="loop_demo2"></p>
+
+            <script>
+                function fecto() {
+                    let fecto = parseFloat(document.getElementById("fnum").value);
+                    let temp2 = fecto;
+                    if (fecto === 0 || fecto === 1) {
+                        temp2 = 1;
+                    }
+                    while (fecto > 1) {
+                        fecto--;
+                        temp2 *= fecto;
+                    }
+
+                    document.getElementById("loop_demo2").innerHTML = "The Fectorial of given number is : " + temp2;
+                }
+            </script>
+        </div>
+        <footer class="main">
+            <h2>180020107057 - Dhirenkumar Rathod</h2>
+            <a href="../../../index.html">back to home</a>
+            <a href="../../20.html">back</a>
+        </footer>
+    </body>
+</html>
